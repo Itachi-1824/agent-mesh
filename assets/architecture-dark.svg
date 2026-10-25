@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-labelledby="title desc">
+  <title id="title">How agent-mesh works</title>
+  <desc id="desc">Each person's agents talk to a local mesh process; mesh processes connect directly, peer to peer, over encrypted links, and share a private git hive.</desc>
+  <rect width="1200" height="600" fill="#11100E"/>
+  <rect x="20" y="20" width="1160" height="560" fill="none" stroke="#34312B"/>
+  <g>
+      <text x="60" y="70" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" letter-spacing="2.2" fill="#6B655A">ALICE'S MACHINE</text>
+      <line x1="60" y1="84" x2="380" y2="84" stroke="#34312B"/>
+      <circle cx="145" cy="178" r="5" fill="#EEE8DC"/>
+      <text x="145" y="156" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12.5" fill="#EEE8DC">alice/claude</text>
+      <path d="M145 183 C145 240, 220 230, 220 287" fill="none" stroke="#5A554B" stroke-width="1.1"/><circle cx="295" cy="178" r="5" fill="#EEE8DC"/>
+      <text x="295" y="156" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12.5" fill="#EEE8DC">alice/codex</text>
+      <path d="M295 183 C295 240, 220 230, 220 287" fill="none" stroke="#5A554B" stroke-width="1.1"/>
+      <circle cx="220" cy="300" r="13" fill="#11100E" stroke="#EEE8DC" stroke-width="1.4"/>
+      <circle cx="220" cy="300" r="4" fill="#EEE8DC"/>
+      <text x="244" y="304.5" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif" font-style="italic" font-size="17" fill="#9C9587">mesh</text>
+    </g>
+<g>
+      <text x="440" y="70" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" letter-spacing="2.2" fill="#6B655A">BOB'S MACHINE</text>
+      <line x1="440" y1="84" x2="760" y2="84" stroke="#34312B"/>
+      <circle cx="600" cy="178" r="5" fill="#EEE8DC"/>
+      <text x="600" y="156" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12.5" fill="#EEE8DC">bob/codex</text>
+      <path d="M600 183 C600 240, 600 230, 600 287" fill="none" stroke="#5A554B" stroke-width="1.1"/>
+      <circle cx="600" cy="300" r="13" fill="#11100E" stroke="#EEE8DC" stroke-width="1.4"/>
+      <circle cx="600" cy="300" r="4" fill="#EEE8DC"/>
+      <text x="624" y="304.5" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif" font-style="italic" font-size="17" fill="#9C9587">mesh</text>
+    </g>
+<g>
+      <text x="820" y="70" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" letter-spacing="2.2" fill="#6B655A">CAROL'S MACHINE</text>
+      <line x1="820" y1="84" x2="1140" y2="84" stroke="#34312B"/>
+      <circle cx="905" cy="178" r="5" fill="#EEE8DC"/>
+      <text x="905" y="156" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12.5" fill="#EEE8DC">carol/opencode</text>
+      <path d="M905 183 C905 240, 980 230, 980 287" fill="none" stroke="#5A554B" stroke-width="1.1"/><circle cx="1055" cy="178" r="5" fill="#EEE8DC"/>
+      <text x="1055" y="156" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12.5" fill="#EEE8DC">carol/gemini</text>
+      <path d="M1055 183 C1055 240, 980 230, 980 287" fill="none" stroke="#5A554B" stroke-width="1.1"/>
+      <circle cx="980" cy="300" r="13" fill="#11100E" stroke="#EEE8DC" stroke-width="1.4"/>
+      <circle cx="980" cy="300" r="4" fill="#EEE8DC"/>
+      <text x="1004" y="304.5" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif" font-style="italic" font-size="17" fill="#9C9587">mesh</text>
+    </g>
+  <path d="M233 300 C330 236, 490 236, 587 300" fill="none" stroke="#E0663F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M613 300 C710 236, 870 236, 967 300" fill="none" stroke="#E0663F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M220 313 C260 396, 940 396, 980 313" fill="none" stroke="#E0663F" stroke-width="1.4" stroke-opacity=".55"/>
+  <g font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#E0663F" text-anchor="middle">
+    <text x="410" y="242">ENCRYPTED · PEER-TO-PEER</text>
+    <text x="790" y="242">SIGNED MESSAGES</text>
+  </g>
+  <line x1="220" y1="313" x2="531.6" y2="460" stroke="#5A554B" stroke-width="1" stroke-dasharray="2 5"/><line x1="600" y1="313" x2="600" y2="460" stroke="#5A554B" stroke-width="1" stroke-dasharray="2 5"/><line x1="980" y1="313" x2="668.4" y2="460" stroke="#5A554B" stroke-width="1" stroke-dasharray="2 5"/>
+  <rect x="330" y="460" width="540" height="76" fill="#181714" stroke="#EEE8DC" stroke-width="1.2"/>
+  <text x="600" y="492" text-anchor="middle" font-family="'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif" font-size="22" fill="#EEE8DC">The hive <tspan font-style="italic" fill="#9C9587">— a private git repository</tspan></text>
+  <text x="600" y="520" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" letter-spacing="1.8" fill="#9C9587">NOTES · DECISIONS · CONTRACTS · TASKS · OFFLINE MAILBOX</text>
+</svg>

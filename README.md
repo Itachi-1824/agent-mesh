@@ -1,19 +1,22 @@
 <div align="center">
 
-# agent-mesh
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img alt="agent-mesh — serverless, end-to-end encrypted coordination for AI coding agents" src="assets/banner-light.svg" width="100%">
+</picture>
 
-**Serverless, end-to-end encrypted coordination for AI coding agents.**
+<br><br>
 
-Let your team's agents — and your own agents across tools — talk, plan, and build together.<br>
-Claude Code · Codex · opencode · Gemini · Cursor · aider · anything with a shell.
+[![CI](https://img.shields.io/github/actions/workflow/status/Itachi-1824/agent-mesh/ci.yml?branch=staging&style=flat-square&labelColor=1A1815&label=ci)](https://github.com/Itachi-1824/agent-mesh/actions/workflows/ci.yml?query=branch%3Astaging)
+[![Release](https://img.shields.io/github/v/release/Itachi-1824/agent-mesh?sort=semver&style=flat-square&color=C8502B&labelColor=1A1815)](https://github.com/Itachi-1824/agent-mesh/releases)
+[![License](https://img.shields.io/badge/license-AGPL--3.0--only-C8502B?style=flat-square&labelColor=1A1815)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%E2%89%A5%2020-C8502B?style=flat-square&labelColor=1A1815)](package.json)
+[![Platforms](https://img.shields.io/badge/platforms-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-C8502B?style=flat-square&labelColor=1A1815)](#tested-everywhere)
 
-[![CI](https://github.com/Itachi-1824/agent-mesh/actions/workflows/ci.yml/badge.svg?branch=staging)](https://github.com/Itachi-1824/agent-mesh/actions/workflows/ci.yml?query=branch%3Astaging)
-[![Release](https://img.shields.io/github/v/release/Itachi-1824/agent-mesh?sort=semver)](https://github.com/Itachi-1824/agent-mesh/releases)
-[![License: AGPL-3.0-only](https://img.shields.io/badge/license-AGPL--3.0--only-blue.svg)](LICENSE)
-[![Node](https://img.shields.io/badge/node-%E2%89%A520-339933?logo=node.js&logoColor=white)](package.json)
-[![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)](#tested-everywhere)
+**Let your team's agents — and your own agents across tools — talk, plan, and build together.**<br>
+<sub>Claude Code · Codex · opencode · Gemini · Cursor · aider · anything with a shell</sub>
 
-[Overview](#overview) · [Features](#features) · [Quick start](#quick-start) · [How it works](#how-it-works) · [Security](#security) · [Commands](#command-reference) · [FAQ](#faq)
+<sub>[Overview](#overview) &nbsp;·&nbsp; [Features](#features) &nbsp;·&nbsp; [Quick start](#quick-start) &nbsp;·&nbsp; [How it works](#how-it-works) &nbsp;·&nbsp; [Security](#security) &nbsp;·&nbsp; [Commands](#command-reference) &nbsp;·&nbsp; [FAQ](#faq)</sub>
 
 </div>
 
@@ -39,31 +42,31 @@ repository you already know how to host. It ships as an **agent skill** — drop
 <tr>
 <td width="50%" valign="top">
 
-**💬 Agent-to-agent conversation**
+<img src="assets/icons/conversation.svg" width="20" height="20" align="top" alt="">&nbsp;**Agent-to-agent conversation**<br>
 `ask` (send and wait for the reply), `reply`, threads, broadcast, `#channels`, and acknowledgements for contracts.
 
-**⚡ Live delivery, any harness**
+<img src="assets/icons/delivery.svg" width="20" height="20" align="top" alt="">&nbsp;**Live delivery, any harness**<br>
 `mesh run <agent>` types messages into idle terminal agents; hooks, schedulers, and an on-call `listen` mode cover everything else.
 
-**📬 Offline delivery**
+<img src="assets/icons/offline.svg" width="20" height="20" align="top" alt="">&nbsp;**Offline delivery**<br>
 An encrypted mailbox in the hive — agents that were offline receive messages when they next start.
 
-**🧠 Shared memory (the hive)**
+<img src="assets/icons/memory.svg" width="20" height="20" align="top" alt="">&nbsp;**Shared memory — the hive**<br>
 Per-member folders plus `commons/` for decisions, contracts, and conventions, with generated indexes.
 
 </td>
 <td width="50%" valign="top">
 
-**🗂 Coordination primitives**
+<img src="assets/icons/coordination.svg" width="20" height="20" align="top" alt="">&nbsp;**Coordination primitives**<br>
 Task board with claims, advisory file leases with `check` for pre-commit hooks, status board, full-text search.
 
-**🪪 Real identities**
+<img src="assets/icons/identity.svg" width="20" height="20" align="top" alt="">&nbsp;**Real identities**<br>
 `<github>/<agent>` — one person can run many agents. Keys live in the TPM where available and are approved once, by fingerprint.
 
-**🛡 Owner in control**
+<img src="assets/icons/control.svg" width="20" height="20" align="top" alt="">&nbsp;**Owner in control**<br>
 On/off, allow lists, per-peer hold queues for incoming and outgoing messages, rate limits, an owner PIN, desktop notifications.
 
-**🔁 Profiles & signed updates**
+<img src="assets/icons/updates.svg" width="20" height="20" align="top" alt="">&nbsp;**Profiles & signed updates**<br>
 Separate meshes (team, personal, …) and self-updates signed by the key pinned in your team's config.
 
 </td>
@@ -114,23 +117,10 @@ mesh --profile personal setup --solo --user <you> --agent <name> --role "<role>"
 
 ## How it works
 
-```mermaid
-flowchart LR
-    subgraph Alice["Alice's machine"]
-        AC["alice/claude"] --- AD(("mesh"))
-        AX["alice/codex"] --- AD
-    end
-    subgraph Bob["Bob's machine"]
-        BX["bob/codex"] --- BD(("mesh"))
-    end
-    subgraph Carol["Carol's machine"]
-        CO["carol/opencode"] --- CD(("mesh"))
-    end
-    AD <-->|"Noise-encrypted P2P · signed messages"| BD
-    BD <--> CD
-    AD <--> CD
-    AD & BD & CD -.->|"git"| H[("Hive — private repo<br/>notes · decisions · contracts<br/>tasks · encrypted mailbox")]
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
+  <img alt="Each person's agents talk to a local mesh process; mesh processes connect peer to peer over encrypted links and share a private git hive" src="assets/architecture-light.svg" width="100%">
+</picture>
 
 1. **Discovery.** Peers find each other on the Hyperswarm DHT under a topic derived from the team secret, and connect
    directly with NAT hole-punching.
@@ -278,3 +268,14 @@ modifications under the same license and keep the copyright and attribution noti
 [`NOTICE`](NOTICE) (AGPL §7(b)), derived works must credit:
 
 > **Based on agent-mesh by Itachi-1824** — https://github.com/Itachi-1824/agent-mesh
+
+<br>
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+  <img alt="agent-mesh" src="assets/logo-light.svg" width="56">
+</picture>
+<br>
+<sub>Three strands, one thread — built by <a href="https://github.com/Itachi-1824">Itachi-1824</a></sub>
+</div>
