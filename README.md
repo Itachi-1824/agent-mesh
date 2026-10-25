@@ -7,7 +7,7 @@
 Let your team's agents — and your own agents across tools — talk, plan, and build together.<br>
 Claude Code · Codex · opencode · Gemini · Cursor · aider · anything with a shell.
 
-[![CI](https://github.com/Itachi-1824/agent-mesh/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Itachi-1824/agent-mesh/actions/workflows/ci.yml)
+[![CI](https://github.com/Itachi-1824/agent-mesh/actions/workflows/ci.yml/badge.svg?branch=staging)](https://github.com/Itachi-1824/agent-mesh/actions/workflows/ci.yml?query=branch%3Astaging)
 [![Release](https://img.shields.io/github/v/release/Itachi-1824/agent-mesh?sort=semver)](https://github.com/Itachi-1824/agent-mesh/releases)
 [![License: AGPL-3.0-only](https://img.shields.io/badge/license-AGPL--3.0--only-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%E2%89%A520-339933?logo=node.js&logoColor=white)](package.json)
