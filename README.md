@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img alt="agent-mesh — serverless, end-to-end encrypted coordination for AI coding agents" src="assets/banner-light.svg" width="100%">
+  <img alt="agent mesh — a murmuration of agents: no leader, no server, many agents moving as one" src="assets/banner-light.svg" width="100%">
 </picture>
 
 <br><br>
@@ -274,8 +274,8 @@ modifications under the same license and keep the copyright and attribution noti
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
-  <img alt="agent-mesh" src="assets/logo-light.svg" width="56">
+  <img alt="agent mesh ensō" src="assets/logo-light.svg" width="64">
 </picture>
 <br>
-<sub>Three strands, one thread — built by <a href="https://github.com/Itachi-1824">Itachi-1824</a></sub>
+<sub>Many marks, one circle — built by <a href="https://github.com/Itachi-1824">Itachi-1824</a></sub>
 </div>
