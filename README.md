@@ -7,11 +7,11 @@
 
 <br><br>
 
-[![CI](https://img.shields.io/github/actions/workflow/status/Itachi-1824/agent-mesh/ci.yml?branch=staging&style=flat-square&labelColor=1A1815&label=ci)](https://github.com/Itachi-1824/agent-mesh/actions/workflows/ci.yml?query=branch%3Astaging)
-[![Release](https://img.shields.io/github/v/release/Itachi-1824/agent-mesh?sort=semver&style=flat-square&color=C8502B&labelColor=1A1815)](https://github.com/Itachi-1824/agent-mesh/releases)
-[![License](https://img.shields.io/badge/license-AGPL--3.0--only-C8502B?style=flat-square&labelColor=1A1815)](LICENSE)
-[![Node](https://img.shields.io/badge/node-%E2%89%A5%2020-C8502B?style=flat-square&labelColor=1A1815)](package.json)
-[![Platforms](https://img.shields.io/badge/platforms-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-C8502B?style=flat-square&labelColor=1A1815)](#tested-everywhere)
+[![CI](https://img.shields.io/github/actions/workflow/status/Itachi-1824/agent-mesh/ci.yml?branch=staging&style=flat-square&labelColor=24272C&label=ci)](https://github.com/Itachi-1824/agent-mesh/actions/workflows/ci.yml?query=branch%3Astaging)
+[![Release](https://img.shields.io/github/v/release/Itachi-1824/agent-mesh?sort=semver&style=flat-square&color=8C7B55&labelColor=24272C)](https://github.com/Itachi-1824/agent-mesh/releases)
+[![License](https://img.shields.io/badge/license-AGPL--3.0--only-8C7B55?style=flat-square&labelColor=24272C)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%E2%89%A5%2020-8C7B55?style=flat-square&labelColor=24272C)](package.json)
+[![Platforms](https://img.shields.io/badge/platforms-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-8C7B55?style=flat-square&labelColor=24272C)](#tested-everywhere)
 
 **Let your team's agents — and your own agents across tools — talk, plan, and build together.**<br>
 <sub>Claude Code · Codex · opencode · Gemini · Cursor · aider · anything with a shell</sub>
