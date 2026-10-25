@@ -2,16 +2,16 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img alt="agent mesh — a murmuration of agents: no leader, no server, many agents moving as one" src="assets/banner-light.svg" width="100%">
+  <img alt="agent mesh — a sumi-e ensō whose dry tail breaks into a murmuration of birds: many agents, one circle, no leader" src="assets/banner-light.svg" width="100%">
 </picture>
 
 <br><br>
 
 [![CI](https://img.shields.io/github/actions/workflow/status/Itachi-1824/agent-mesh/ci.yml?branch=staging&style=flat-square&labelColor=24272C&label=ci)](https://github.com/Itachi-1824/agent-mesh/actions/workflows/ci.yml?query=branch%3Astaging)
-[![Release](https://img.shields.io/github/v/release/Itachi-1824/agent-mesh?sort=semver&style=flat-square&color=8C7B55&labelColor=24272C)](https://github.com/Itachi-1824/agent-mesh/releases)
-[![License](https://img.shields.io/badge/license-AGPL--3.0--only-8C7B55?style=flat-square&labelColor=24272C)](LICENSE)
-[![Node](https://img.shields.io/badge/node-%E2%89%A5%2020-8C7B55?style=flat-square&labelColor=24272C)](package.json)
-[![Platforms](https://img.shields.io/badge/platforms-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-8C7B55?style=flat-square&labelColor=24272C)](#tested-everywhere)
+[![Release](https://img.shields.io/github/v/release/Itachi-1824/agent-mesh?sort=semver&style=flat-square&color=A0453A&labelColor=24272C)](https://github.com/Itachi-1824/agent-mesh/releases)
+[![License](https://img.shields.io/badge/license-AGPL--3.0--only-A0453A?style=flat-square&labelColor=24272C)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%E2%89%A5%2020-A0453A?style=flat-square&labelColor=24272C)](package.json)
+[![Platforms](https://img.shields.io/badge/platforms-Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-A0453A?style=flat-square&labelColor=24272C)](#tested-everywhere)
 
 **Let your team's agents — and your own agents across tools — talk, plan, and build together.**<br>
 <sub>Claude Code · Codex · opencode · Gemini · Cursor · aider · anything with a shell</sub>
@@ -118,9 +118,11 @@ mesh --profile personal setup --solo --user <you> --agent <name> --role "<role>"
 ## How it works
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/architecture-dark.svg">
-  <img alt="Each person's agents talk to a local mesh process; mesh processes connect peer to peer over encrypted links and share a private git hive" src="assets/architecture-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/garden-dark.svg">
+  <img alt="A zen rock garden: each person's machine is a stone; raked ripples spread from every stone and merge directly where they meet — no server in between. The raked bed is the hive, the shared memory every agent tends." src="assets/garden-light.svg" width="100%">
 </picture>
+
+<sub><i>Each person is a stone. Their messages ripple outward and meet the others' directly — there is nothing in the middle but sand. The raked bed is the hive: the shared ground every agent tends.</i></sub>
 
 1. **Discovery.** Peers find each other on the Hyperswarm DHT under a topic derived from the team secret, and connect
    directly with NAT hole-punching.
@@ -277,5 +279,5 @@ modifications under the same license and keep the copyright and attribution noti
   <img alt="agent mesh ensō" src="assets/logo-light.svg" width="64">
 </picture>
 <br>
-<sub>Many marks, one circle — built by <a href="https://github.com/Itachi-1824">Itachi-1824</a></sub>
+<sub>Many agents, one circle — built by <a href="https://github.com/Itachi-1824">Itachi-1824</a></sub>
 </div>
