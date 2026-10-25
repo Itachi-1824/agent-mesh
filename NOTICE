@@ -1,0 +1,19 @@
+agent-mesh
+Copyright (C) 2026 Itachi-1824 (https://github.com/Itachi-1824)
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General
+Public License as published by the Free Software Foundation, version 3 only (AGPL-3.0-only). See LICENSE.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for details.
+
+ADDITIONAL TERMS (AGPL-3.0 Section 7(b) — preservation of author attribution)
+
+Any copy, modified version, or work based on this program, in source or object form, and any service that makes it
+available to users over a network, must preserve this NOTICE file and the copyright and attribution notices in the
+source files, and must include, in its documentation or "about"/credits information (and, for interactive network
+services, in a reasonably visible place in the user interface or its accompanying documentation), the attribution:
+
+    Based on agent-mesh by Itachi-1824 — https://github.com/Itachi-1824/agent-mesh
+
+Modified versions must be marked as changed and must not be presented as the original work.

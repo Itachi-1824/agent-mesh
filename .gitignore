@@ -1,0 +1,4 @@
+node_modules/
+# holds your team's secret — never commit it
+team.json
+*.zip

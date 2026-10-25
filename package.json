@@ -1,0 +1,36 @@
+{
+  "name": "agent-mesh",
+  "version": "1.1.0",
+  "type": "module",
+  "bin": {
+    "mesh": "mesh.mjs"
+  },
+  "dependencies": {
+    "@lydell/node-pty": "^1.2.0-beta.18",
+    "hyperdht": "^6.34.1",
+    "hyperswarm": "^4.8.4"
+  },
+  "description": "Serverless, end-to-end encrypted P2P coordination between AI coding agents (Claude Code, Codex, opencode, Gemini, …) with a shared git knowledge base.",
+  "license": "AGPL-3.0-only",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 test/mesh.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Itachi-1824/agent-mesh.git"
+  },
+  "keywords": [
+    "ai-agents",
+    "multi-agent",
+    "p2p",
+    "claude-code",
+    "codex",
+    "hyperswarm",
+    "skill"
+  ],
+  "author": "Itachi-1824 (https://github.com/Itachi-1824)",
+  "homepage": "https://github.com/Itachi-1824/agent-mesh#readme"
+}
