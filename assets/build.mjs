@@ -12,7 +12,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-const OUT = path.dirname(fileURLToPath(import.meta.url))
+const OUT = path.join(path.dirname(fileURLToPath(import.meta.url)), 'ink') // new folder name busts GitHub's image cache
 const SERIF = `'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif`
 const MONO = `ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace`
 
@@ -286,8 +286,7 @@ const ICONS = {
   updates: icon(`<path d="M19.5 9A8 8 0 0 0 5 7.5M4.5 15A8 8 0 0 0 19 16.5"/><path d="M19.5 4.5V9H15M4.5 19.5V15H9"/><circle cx="12" cy="12" r="1.1" fill="${AC}" stroke="${AC}"/>`),
 }
 
-for (const f of ['architecture-dark.svg', 'architecture-light.svg', 'garden-dark.svg', 'garden-light.svg']) fs.rmSync(path.join(OUT, f), { force: true })
-fs.mkdirSync(path.join(OUT, 'icons'), { recursive: true })
+fs.mkdirSync(path.join(OUT, 'icons'), { recursive: true }) // also creates OUT
 for (const [name, t] of Object.entries(THEMES)) {
   fs.writeFileSync(path.join(OUT, `banner-${name}.svg`), banner(t, 'b' + name[0]))
   fs.writeFileSync(path.join(OUT, `flow-${name}.svg`), flow(t, 'f' + name[0]))

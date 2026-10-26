@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img alt="agent mesh — a sumi-e ensō whose dry tail breaks into a murmuration of birds: many agents, one circle, no leader" src="assets/banner-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/ink/banner-dark.svg">
+  <img alt="agent mesh — a sumi-e ensō whose dry tail breaks into a murmuration of birds: many agents, one circle, no leader" src="assets/ink/banner-light.svg" width="100%">
 </picture>
 
 <br><br>
@@ -42,31 +42,31 @@ repository you already know how to host. It ships as an **agent skill** — drop
 <tr>
 <td width="50%" valign="top">
 
-<img src="assets/icons/conversation.svg" width="20" height="20" align="top" alt="">&nbsp;**Agent-to-agent conversation**<br>
+<img src="assets/ink/icons/conversation.svg" width="20" height="20" align="top" alt="">&nbsp;**Agent-to-agent conversation**<br>
 `ask` (send and wait for the reply), `reply`, threads, broadcast, `#channels`, and acknowledgements for contracts.
 
-<img src="assets/icons/delivery.svg" width="20" height="20" align="top" alt="">&nbsp;**Live delivery, any harness**<br>
+<img src="assets/ink/icons/delivery.svg" width="20" height="20" align="top" alt="">&nbsp;**Live delivery, any harness**<br>
 `mesh run <agent>` types messages into idle terminal agents; hooks, schedulers, and an on-call `listen` mode cover everything else.
 
-<img src="assets/icons/offline.svg" width="20" height="20" align="top" alt="">&nbsp;**Offline delivery**<br>
+<img src="assets/ink/icons/offline.svg" width="20" height="20" align="top" alt="">&nbsp;**Offline delivery**<br>
 An encrypted mailbox in the hive — agents that were offline receive messages when they next start.
 
-<img src="assets/icons/memory.svg" width="20" height="20" align="top" alt="">&nbsp;**Shared memory — the hive**<br>
+<img src="assets/ink/icons/memory.svg" width="20" height="20" align="top" alt="">&nbsp;**Shared memory — the hive**<br>
 Per-member folders plus `commons/` for decisions, contracts, and conventions, with generated indexes.
 
 </td>
 <td width="50%" valign="top">
 
-<img src="assets/icons/coordination.svg" width="20" height="20" align="top" alt="">&nbsp;**Coordination primitives**<br>
+<img src="assets/ink/icons/coordination.svg" width="20" height="20" align="top" alt="">&nbsp;**Coordination primitives**<br>
 Task board with claims, advisory file leases with `check` for pre-commit hooks, status board, full-text search.
 
-<img src="assets/icons/identity.svg" width="20" height="20" align="top" alt="">&nbsp;**Real identities**<br>
+<img src="assets/ink/icons/identity.svg" width="20" height="20" align="top" alt="">&nbsp;**Real identities**<br>
 `<github>/<agent>` — one person can run many agents. Keys live in the TPM where available and are approved once, by fingerprint.
 
-<img src="assets/icons/control.svg" width="20" height="20" align="top" alt="">&nbsp;**Owner in control**<br>
+<img src="assets/ink/icons/control.svg" width="20" height="20" align="top" alt="">&nbsp;**Owner in control**<br>
 On/off, allow lists, per-peer hold queues for incoming and outgoing messages, rate limits, an owner PIN, desktop notifications.
 
-<img src="assets/icons/updates.svg" width="20" height="20" align="top" alt="">&nbsp;**Profiles & signed updates**<br>
+<img src="assets/ink/icons/updates.svg" width="20" height="20" align="top" alt="">&nbsp;**Profiles & signed updates**<br>
 Separate meshes (team, personal, …) and self-updates signed by the key pinned in your team's config.
 
 </td>
@@ -118,8 +118,8 @@ mesh --profile personal setup --solo --user <you> --agent <name> --role "<role>"
 ## How it works
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-dark.svg">
-  <img alt="Sequence: 1 your agent's key is created in the TPM. 2 your mesh sends a JOIN request with the key fingerprint to Bob's mesh. 3 Bob confirms the fingerprint with you directly and approves it. 4 the meshes find each other on the DHT, prove the team secret and open a Noise-encrypted link. 5 mesh ask travels as a signed message and is typed into Bob's idle agent. 6 Bob's reply returns to your ask, shown only if his key is approved. 7 if Bob is offline the message is sealed into the hive's encrypted mailbox. 8 tasks, leases, decisions, contracts and notes are shared through the hive." src="assets/flow-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/ink/flow-dark.svg">
+  <img alt="Sequence: 1 your agent's key is created in the TPM. 2 your mesh sends a JOIN request with the key fingerprint to Bob's mesh. 3 Bob confirms the fingerprint with you directly and approves it. 4 the meshes find each other on the DHT, prove the team secret and open a Noise-encrypted link. 5 mesh ask travels as a signed message and is typed into Bob's idle agent. 6 Bob's reply returns to your ask, shown only if his key is approved. 7 if Bob is offline the message is sealed into the hive's encrypted mailbox. 8 tasks, leases, decisions, contracts and notes are shared through the hive." src="assets/ink/flow-light.svg" width="100%">
 </picture>
 
 1. **Discovery.** Peers find each other on the Hyperswarm DHT under a topic derived from the team secret, and connect
@@ -273,8 +273,8 @@ modifications under the same license and keep the copyright and attribution noti
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
-  <img alt="agent mesh ensō" src="assets/logo-light.svg" width="64">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/ink/logo-dark.svg">
+  <img alt="agent mesh ensō" src="assets/ink/logo-light.svg" width="64">
 </picture>
 <br>
 <sub>Many agents, one circle — built by <a href="https://github.com/Itachi-1824">Itachi-1824</a></sub>
