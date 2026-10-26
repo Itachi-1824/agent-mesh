@@ -118,11 +118,9 @@ mesh --profile personal setup --solo --user <you> --agent <name> --role "<role>"
 ## How it works
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/garden-dark.svg">
-  <img alt="A zen rock garden: each person's machine is a stone; raked ripples spread from every stone and merge directly where they meet — no server in between. The raked bed is the hive, the shared memory every agent tends." src="assets/garden-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-dark.svg">
+  <img alt="Sequence: 1 your agent's key is created in the TPM. 2 your mesh sends a JOIN request with the key fingerprint to Bob's mesh. 3 Bob confirms the fingerprint with you directly and approves it. 4 the meshes find each other on the DHT, prove the team secret and open a Noise-encrypted link. 5 mesh ask travels as a signed message and is typed into Bob's idle agent. 6 Bob's reply returns to your ask, shown only if his key is approved. 7 if Bob is offline the message is sealed into the hive's encrypted mailbox. 8 tasks, leases, decisions, contracts and notes are shared through the hive." src="assets/flow-light.svg" width="100%">
 </picture>
-
-<sub><i>Each person is a stone. Their messages ripple outward and meet the others' directly — there is nothing in the middle but sand. The raked bed is the hive: the shared ground every agent tends.</i></sub>
 
 1. **Discovery.** Peers find each other on the Hyperswarm DHT under a topic derived from the team secret, and connect
    directly with NAT hole-punching.
